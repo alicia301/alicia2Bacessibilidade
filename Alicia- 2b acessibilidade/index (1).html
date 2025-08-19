@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teatro Acessível Alicia</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Cabeçalho com navegação acessível -->
+  <header class="bg-dark text-white p-3">
+    <nav class="container d-flex justify-content-between align-items-center" aria-label="Menu principal">
+      <h1 class="fs-3">🎭 Teatro Acessível Alicia</h1>
+      <ul class="nav">
+        <li class="nav-item"><a class="nav-link text-white" href="#inicio">Início</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#programacao">Programação</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#acessibilidade">Acessibilidade</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#sobre">Sobre nós</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Botões de acessibilidade -->
+  <div class="container mt-3 d-flex gap-2">
+    <button id="aumentar-fonte" class="btn btn-outline-light bg-dark" aria-label="Aumentar tamanho da fonte">A+</button>
+    <button id="diminuir-fonte" class="btn btn-outline-light bg-dark" aria-label="Diminuir tamanho da fonte">A-</button>
+    <button id="alternar-contraste" class="btn btn-outline-light bg-dark" aria-label="Ativar ou desativar alto contraste">
+      <i class="bi bi-shadows"></i> Contraste
+    </button>
+  </div>
+
+  <main class="container my-5">
+    <!-- Seção inicial -->
+    <section id="inicio" tabindex="0" aria-label="Apresentação do Teatro Acessível Alicia">
+      <h2>Bem-vindo ao Teatro Acessível Alicia</h2>
+      <p>
+        Nossa missão é levar cultura, emoção e inclusão a todos.  
+        O <strong>Teatro Acessível Alicia</strong> acredita que a arte deve ser para todos, sem barreiras.  
+        Por isso, investimos em acessibilidade digital e física, garantindo que cada espectador tenha uma experiência completa.
+      </p>
+    </section>
+
+    <!-- Programação -->
+    <section id="programacao" class="my-5" tabindex="0" aria-label="Programação de peças teatrais">
+      <h2>Próximas peças</h2>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <div class="card h-100 shadow">
+            <img src="img/peca1.jpg" class="card-img-top" alt="Cena da peça 'A Magia do Silêncio', com atores em linguagem de sinais no palco">
+            <div class="card-body">
+              <h5 class="card-title">A Magia do Silêncio</h5>
+              <p class="card-text">Uma peça inclusiva, apresentada também em Libras, que mostra a força da comunicação além das palavras.</p>
+              <p><strong>Data:</strong> 10/09 às 20h</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <div class="card h-100 shadow">
+            <img src="img/peca2.jpg" class="card-img-top" alt="Cena da peça 'Cores da Alma', com iluminação vibrante e recursos de audiodescrição">
+            <div class="card-body">
+              <h5 class="card-title">Cores da Alma</h5>
+              <p class="card-text">Espetáculo com audiodescrição e legendas em tempo real para pessoas com deficiência visual e auditiva.</p>
+              <p><strong>Data:</strong> 25/09 às 19h</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recursos de acessibilidade -->
+    <section id="acessibilidade" class="my-5" tabindex="0" aria-label="Recursos de acessibilidade disponíveis">
+      <h2>Nossos recursos de acessibilidade</h2>
+      <ul>
+        <li>📖 Audiodescrição para pessoas com deficiência visual.</li>
+        <li>🤟 Intérprete de Libras em todas as peças.</li>
+        <li>💬 Legendas em tempo real para deficientes auditivos.</li>
+        <li>♿ Espaços reservados e acessíveis para cadeirantes.</li>
+        <li>🌐 Site desenvolvido com padrões de acessibilidade web.</li>
+      </ul>
+    </section>
+
+    <!-- Sobre a empresa -->
+    <section id="sobre" class="my-5" tabindex="0" aria-label="História e valores do Teatro Acessível Alicia">
+      <h2>Sobre nós</h2>
+      <p>
+        O <strong>Teatro Acessível Alicia</strong> nasceu do sonho de democratizar a cultura e abrir espaço para todos os públicos.  
+        Nossa equipe acredita que a arte só é completa quando pode ser vivida por todos, sem exceção.  
+        Trabalhamos com amor, tecnologia e inclusão, porque acreditamos que o teatro é para <em>todo mundo</em>.
+      </p>
+    </section>
+
+    <!-- Formulário acessível -->
+    <section id="contato" class="my-5" tabindex="0" aria-label="Formulário de contato do teatro">
+      <h2>Fale com a gente</h2>
+      <form>
+        <div class="mb-3">
+          <label for="nome" class="form-label">Nome</label>
+          <input type="text" id="nome" name="nome" class="form-control" placeholder="Digite seu nome completo">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" id="email" name="email" class="form-control" placeholder="Digite seu email">
+        </div>
+        <div class="mb-3">
+          <label for="mensagem" class="form-label">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" class="form-control" rows="4" placeholder="Escreva sua mensagem"></textarea>
+        </div>
+        <button type="submit" class="btn btn-dark">Enviar mensagem</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-white text-center p-3">
+    <p>🎭 Teatro Acessível Alicia - Cultura para todos, sem barreiras.</p>
+    <div class="mt-2">
+      <a href="#" aria-label="WhatsApp do Teatro Acessível Alicia"><i class="bi bi-whatsapp text-white fs-4 mx-2"></i></a>
+      <a href="#" aria-label="Instagram do Teatro Acessível Alicia"><i class="bi bi-instagram text-white fs-4 mx-2"></i></a>
+      <a href="#" aria-label="Facebook do Teatro Acessível Alicia"><i class="bi bi-facebook text-white fs-4 mx-2"></i></a>
+    </div>
+  </footer>
+
+  <script>
+    // Aumentar/DIMINUIR fonte
+    const body = document.body;
+    let fontSize = 16;
+
+    document.getElementById("aumentar-fonte").addEventListener("click", () => {
+      fontSize += 2;
+      body.style.fontSize = fontSize + "px";
+    });
+
+    document.getElementById("diminuir-fonte").addEventListener("click", () => {
+      fontSize -= 2;
+      body.style.fontSize = fontSize + "px";
+    });
+
+    // Alternar contraste
+    document.getElementById("alternar-contraste").addEventListener("click", () => {
+      body.classList.toggle("alto-contraste");
+    });
+  </script>
+</body>
+</html>
